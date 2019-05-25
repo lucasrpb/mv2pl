@@ -11,7 +11,7 @@ import akka.util.Timeout
 import scala.collection.concurrent.TrieMap
 import scala.concurrent.duration._
 import scala.concurrent.ExecutionContext.Implicits.global
-import scala.concurrent.{Await, Future}
+import scala.concurrent.{Await, Future, Promise}
 
 class MainSpec extends FlatSpec {
 
@@ -23,7 +23,8 @@ class MainSpec extends FlatSpec {
     val system = ActorSystem("transactions")
 
     for(i<-0 until 10){
-      val p = system.actorOf(Props(classOf[Partition], i.toString), s"$i")
+      val p = system.actorOf(Props(classOf[Partition], i.toString)
+        .withDispatcher("custom-dispatcher"), s"$i")
       partitions.put(i.toString, p)
     }
 
@@ -31,7 +32,7 @@ class MainSpec extends FlatSpec {
 
     var accounts = Seq.empty[Account]
 
-    for(i<-0 until 100){
+    for(i<-0 until 10){
       val balance = rand.nextInt(0, 1000)
       val a = Account(UUID.randomUUID.toString, balance)
 
@@ -55,15 +56,17 @@ class MainSpec extends FlatSpec {
         }
       }
 
+      val ptmout = Promise[Seq[Boolean]]()
+      system.scheduler.scheduleOnce(300 milliseconds){
+        ptmout.failure(new Exception("timeout!"))
+      }
+
+      val list = Future.sequence(requests.map{case (p, l) => (partitions(p) ? l).mapTo[Boolean]})
+
       val start = System.currentTimeMillis()
-      Future.sequence(requests.map{case (p, l) => (partitions(p) ? l).mapTo[Boolean]})
-        .map { locks =>
-        if(locks.exists(_ == false)){
-          false
-        } else {
-          f
-          true
-        }
+
+      Future.firstCompletedOf(Seq(list, ptmout.future)).map { locks =>
+        !locks.exists(_ == false)
       }.recover{case _ => false}
       .map { ok =>
 
@@ -80,7 +83,7 @@ class MainSpec extends FlatSpec {
     var tasks = Seq.empty[Future[Boolean]]
     val len = accounts.length
 
-    for(i<-0 until 1000){
+    for(i<-0 until 100){
 
       val p0 = rand.nextInt(len)
       val p1 = rand.nextInt(len)
@@ -106,7 +109,6 @@ class MainSpec extends FlatSpec {
           to.balance = b1
         }
       }
-
     }
 
     val start = System.currentTimeMillis()

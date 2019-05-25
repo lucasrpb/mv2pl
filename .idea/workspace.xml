@@ -2,22 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="241c1663-dcf6-4d4d-9e72-a741b3180136" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/mv2pl/MyMessageQueue.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/mv2pl/MyUnboundedMailbox.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/mv2pl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/mv2pl.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/mv2pl/Partition.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/mv2pl/Partition.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/mv2pl/package.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/mv2pl/package.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/scala/mv2pl/MainSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/mv2pl/MainSpec.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/mv2pl/Partition$$anonfun$receive$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/mv2pl/Partition$$anonfun$receive$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/mv2pl/Partition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/mv2pl/Partition.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/mv2pl/package$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/mv2pl/package$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/mv2pl/package$Lock$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/mv2pl/package$Lock$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/mv2pl/package$Lock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/mv2pl/package$Lock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/mv2pl/package$Release$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/mv2pl/package$Release$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/mv2pl/package$Release.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/mv2pl/package$Release.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/mv2pl/package.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/mv2pl/package.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/test-classes/mv2pl/MainSpec$$anonfun$transaction$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/test-classes/mv2pl/MainSpec$$anonfun$transaction$1$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/test-classes/mv2pl/MainSpec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/test-classes/mv2pl/MainSpec.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/compileIncSetup/$global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compileIncremental/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/definedTests/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/definedTests/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/test/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/test/test/$global/streams/succeeded_tests" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/test/$global/streams/succeeded_tests" afterDir="false" />
@@ -44,8 +49,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/mv2pl/Partition.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="176">
+              <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/mv2pl/MyMessageQueue.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+              <folding>
+                <element signature="e#15#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/mv2pl/MainSpec.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-408">
+              <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -62,15 +88,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/mv2pl/MainSpec.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -82,14 +99,22 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/build.sbt" />
-        <option value="$PROJECT_DIR$/src/main/scala/mv2pl/package.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/mv2pl/Partition.scala" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.conf" />
+        <option value="$PROJECT_DIR$/src/main/scala/mv2pl/MyUnboundedMailbox.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/mv2pl/MainSpec.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/mv2pl/Partition.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/mv2pl/package.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/mv2pl/MyMessageQueue.scala" />
       </list>
     </option>
   </component>
@@ -173,7 +198,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558674124246" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558803437674" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -249,7 +274,7 @@
       <workItem from="1558533426145" duration="3128000" />
       <workItem from="1558667964559" duration="6271000" />
       <workItem from="1558713588824" duration="1288000" />
-      <workItem from="1558793387120" duration="1180000" />
+      <workItem from="1558793387120" duration="9377000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.">
       <created>1558673639922</created>
@@ -265,16 +290,31 @@
       <option name="project" value="LOCAL" />
       <updated>1558673656441</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First commit.">
+      <created>1558794731418</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558794731418</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Sequencer implementation...">
+      <created>1558794802384</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558794802384</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11867000" />
+    <option name="totallyTimeSpent" value="20064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15960665" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15960665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -294,7 +334,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="11" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="13" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -313,7 +353,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit." />
+    <MESSAGE value="Sequencer implementation..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sequencer implementation..." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/scala/mv2pl.scala" />
@@ -331,6 +372,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/srcs/akka-actor_2.12-2.5.22-sources.jar!/akka/dispatch/Mailbox.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1258">
+          <caret line="356" column="6" selection-start-line="356" selection-start-column="6" selection-end-line="356" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/mv2pl/MyUnboundedMailbox.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding>
+            <element signature="e#15#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/mv2pl/MainSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/mv2pl/Partition.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/mv2pl/package.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -341,17 +420,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/mv2pl/Partition.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/mv2pl/MyMessageQueue.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/mv2pl/MainSpec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="120">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding>
+            <element signature="e#15#62#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

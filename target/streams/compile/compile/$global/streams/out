@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0mD:\Users\resta\IdeaProjects\mv2pl\src\main\scala\mv2pl\MyMessageQueue.scala:32:24: No implicit Ordering defined for Any.[0m
+[0m[[0m[31merror[0m] [0m[0m    work = work.sortBy { k =>[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

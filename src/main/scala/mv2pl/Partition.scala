@@ -21,6 +21,9 @@ class Partition(val id: String) extends Actor {
       val keys = transactions.map(_._2.keys).flatten.toSeq
 
       if(!cmd.keys.exists(keys.contains(_))){
+
+        cmd.tmp = now
+
         transactions.put(cmd.t, cmd)
         sender ! true
       } else {

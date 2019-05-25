@@ -7,7 +7,7 @@ package object mv2pl {
 
   trait Command
 
-  case class Lock(t: String, var keys: Seq[String], tmp: Long) extends Command
+  case class Lock(t: String, var keys: Seq[String], var tmp: Long) extends Command
   case class Release(t: String) extends Command
 
   val partitions = TrieMap[String, ActorRef]()
