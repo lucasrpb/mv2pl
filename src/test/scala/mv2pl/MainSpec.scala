@@ -22,7 +22,7 @@ class MainSpec extends FlatSpec {
     val rand = ThreadLocalRandom.current()
     val system = ActorSystem("transactions")
 
-    for(i<-0 until 100){
+    for(i<-0 until 10){
       val p = system.actorOf(Props(classOf[Partition], i.toString), s"$i")
       partitions.put(i.toString, p)
     }
@@ -31,7 +31,7 @@ class MainSpec extends FlatSpec {
 
     var accounts = Seq.empty[Account]
 
-    for(i<-0 until 1000){
+    for(i<-0 until 100){
       val balance = rand.nextInt(0, 1000)
       val a = Account(UUID.randomUUID.toString, balance)
 
@@ -80,7 +80,7 @@ class MainSpec extends FlatSpec {
     var tasks = Seq.empty[Future[Boolean]]
     val len = accounts.length
 
-    for(i<-0 until 100){
+    for(i<-0 until 1000){
 
       val p0 = rand.nextInt(len)
       val p1 = rand.nextInt(len)

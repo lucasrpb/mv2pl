@@ -7,10 +7,16 @@ import akka.pattern._
 
 class Partition(val id: String) extends Actor {
 
-  val transactions = TrieMap[String, Lock]()
+  var transactions = TrieMap[String, Lock]()
 
   override def receive: Receive = {
     case cmd: Lock =>
+
+      val now = System.currentTimeMillis()
+
+      transactions = transactions.filter { case (id, t) =>
+         now - t.tmp < TIMEOUT
+      }
 
       val keys = transactions.map(_._2.keys).flatten.toSeq
 
