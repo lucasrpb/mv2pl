@@ -106,6 +106,7 @@ class MainSpec extends FlatSpec {
           to.balance = b1
         }
       }
+
     }
 
     val start = System.currentTimeMillis()
